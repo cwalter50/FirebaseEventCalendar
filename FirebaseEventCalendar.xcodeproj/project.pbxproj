@@ -12,6 +12,7 @@
 		38046B202AC5EEF600CDF2C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38046B1F2AC5EEF600CDF2C9 /* Assets.xcassets */; };
 		38046B232AC5EEF600CDF2C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38046B222AC5EEF600CDF2C9 /* Preview Assets.xcassets */; };
 		38046B2A2AC5F22300CDF2C9 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38046B292AC5F22300CDF2C9 /* AddEventView.swift */; };
+		F83EEE482AC5F71A00DD09AB /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83EEE472AC5F71A00DD09AB /* EventModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		38046B1F2AC5EEF600CDF2C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38046B222AC5EEF600CDF2C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		38046B292AC5F22300CDF2C9 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		F83EEE472AC5F71A00DD09AB /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				38046B1B2AC5EEF400CDF2C9 /* FirebaseEventCalendarApp.swift */,
 				38046B1D2AC5EEF400CDF2C9 /* ContentView.swift */,
 				38046B292AC5F22300CDF2C9 /* AddEventView.swift */,
+				F83EEE472AC5F71A00DD09AB /* EventModel.swift */,
 				38046B1F2AC5EEF600CDF2C9 /* Assets.xcassets */,
 				38046B212AC5EEF600CDF2C9 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				38046B1E2AC5EEF400CDF2C9 /* ContentView.swift in Sources */,
 				38046B2A2AC5F22300CDF2C9 /* AddEventView.swift in Sources */,
+				F83EEE482AC5F71A00DD09AB /* EventModel.swift in Sources */,
 				38046B1C2AC5EEF400CDF2C9 /* FirebaseEventCalendarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
