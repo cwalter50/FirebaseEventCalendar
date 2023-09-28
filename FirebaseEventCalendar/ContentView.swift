@@ -9,10 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-           Text("Hello")
-        }
-        .padding()
+       
+            NavigationStack{
+                
+                NavigationLink("Add New Event", destination: AddEventView())
+                
+                //load events and display
+                
+                
+            }.navigationTitle("Fords Rewards")
+        
     }
 }
 
