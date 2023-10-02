@@ -20,8 +20,8 @@ class AddEventViewModel: ObservableObject {
         let newEvent = Event(name: eventName, date: Timestamp())
         let db = Firestore.firestore()
         
-        let data: [String: Any] = ["name": newEvent.name, "date": newEvent.date]
-        db.collection("event").document("\(newEvent.id)").setData(data) {
+       
+        db.collection("event").document("\(newEvent.id)").setData(newEvent.toDictionaryValues()) {
             err in
             if let error = err {
                 print("ERROR saving data: \(error)")

@@ -13,4 +13,13 @@ struct Event {
     var date: Timestamp = Timestamp()
     
     let id = UUID().uuidString
+    
+    func toDictionaryValues() -> [String: Any]
+    {
+        return [
+            "name": name,
+            "date": date
+        
+        ]
+    }
 }
