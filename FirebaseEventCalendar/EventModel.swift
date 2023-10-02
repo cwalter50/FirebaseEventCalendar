@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import Firebase
 
 struct Event {
     var name: String = ""
-    var date: Double = 0
+    var date: Timestamp = Timestamp()
     
     let id = UUID().uuidString
 }

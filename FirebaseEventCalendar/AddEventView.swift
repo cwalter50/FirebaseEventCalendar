@@ -9,7 +9,8 @@ import SwiftUI
 
 struct AddEventView: View {
     
-    @State var eventName = ""
+    @Environment(\.dismiss) var dismiss
+    @StateObject var viewModel = AddEventViewModel()
     
     var body: some View {
         VStack {
@@ -18,11 +19,14 @@ struct AddEventView: View {
                 .fontWeight(.semibold)
             HStack {
                 Text("Event Name:")
-                TextField("event name...", text: $eventName)
+                TextField("event name...", text: $viewModel.eventName)
             }
             .padding()
             Button("Save Event") {
                 print("save event")
+                viewModel.addEvent()
+                dismiss()
+                
             }
             .padding()
             .font(.title)
