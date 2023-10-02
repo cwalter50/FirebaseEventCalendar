@@ -13,10 +13,17 @@ struct ContentView: View {
             NavigationStack{
                 
                 NavigationLink("Add New Event", destination: AddEventView())
+                    .padding()
                 
                 //load events and display
                 
-                
+                Text("Events:")
+                    .font(.largeTitle)
+                    .padding()
+                Text("List events here")
+                    .padding()
+                Text("Possible sample:\nName, Date/time")
+                Spacer()
             }.navigationTitle("Fords Rewards")
         
     }
