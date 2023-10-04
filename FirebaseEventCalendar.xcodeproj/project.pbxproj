@@ -20,6 +20,7 @@
 		38046B462AC5FCB600CDF2C9 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 38046B452AC5FCB600CDF2C9 /* FirebaseFirestoreSwift */; };
 		38046B482AC5FCB600CDF2C9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 38046B472AC5FCB600CDF2C9 /* FirebaseStorage */; };
 		3895F99B2ACB39E800B7BBED /* AddEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895F99A2ACB39E800B7BBED /* AddEventViewModel.swift */; };
+		3895F99D2ACDDC1E00B7BBED /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895F99C2ACDDC1E00B7BBED /* EventsViewModel.swift */; };
 		F83EEE482AC5F71A00DD09AB /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83EEE472AC5F71A00DD09AB /* EventModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		38046B292AC5F22300CDF2C9 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		38046B3A2AC5FC0D00CDF2C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3895F99A2ACB39E800B7BBED /* AddEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewModel.swift; sourceTree = "<group>"; };
+		3895F99C2ACDDC1E00B7BBED /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
 		F83EEE472AC5F71A00DD09AB /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 			children = (
 				38046B1B2AC5EEF400CDF2C9 /* FirebaseEventCalendarApp.swift */,
 				38046B1D2AC5EEF400CDF2C9 /* ContentView.swift */,
+				3895F99C2ACDDC1E00B7BBED /* EventsViewModel.swift */,
 				38046B292AC5F22300CDF2C9 /* AddEventView.swift */,
 				3895F99A2ACB39E800B7BBED /* AddEventViewModel.swift */,
 				F83EEE472AC5F71A00DD09AB /* EventModel.swift */,
@@ -176,6 +179,7 @@
 				3895F99B2ACB39E800B7BBED /* AddEventViewModel.swift in Sources */,
 				38046B1E2AC5EEF400CDF2C9 /* ContentView.swift in Sources */,
 				38046B2A2AC5F22300CDF2C9 /* AddEventView.swift in Sources */,
+				3895F99D2ACDDC1E00B7BBED /* EventsViewModel.swift in Sources */,
 				F83EEE482AC5F71A00DD09AB /* EventModel.swift in Sources */,
 				38046B1C2AC5EEF400CDF2C9 /* FirebaseEventCalendarApp.swift in Sources */,
 			);

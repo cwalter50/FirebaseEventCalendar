@@ -11,7 +11,7 @@ import SwiftUI
 
 class AddEventViewModel: ObservableObject {
     
-    @Published var event: Event = Event()
+    @Published var event: Event = Event(name: "", date: Timestamp())
     @Published var eventName: String = ""
     
     
@@ -28,18 +28,7 @@ class AddEventViewModel: ObservableObject {
             }
             print("Sucessfuly saved data")
         }
-//        // Add a new document in collection "cities"
-//        db.collection("cities").document("LA").setData([
-//            "name": "Los Angeles",
-//            "state": "CA",
-//            "country": "USA"
-//        ]) { err in
-//            if let err = err {
-//                print("Error writing document: \(err)")
-//            } else {
-//                print("Document successfully written!")
-//            }
-//        }
+
     }
     
 }

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var viewModel = EventsViewModel()
+    
     var body: some View {
        
             NavigationStack{
@@ -20,11 +23,24 @@ struct ContentView: View {
                 Text("Events:")
                     .font(.largeTitle)
                     .padding()
-                Text("List events here")
-                    .padding()
+                List {
+                    ForEach(viewModel.events) { event in
+                        VStack {
+                            Text("\(event.name)")
+                                .font(.title)
+                            Text("\(event.formattedDate)")
+                        }
+                        
+                    }
+                }
+                .listStyle(.plain)
                 Text("Possible sample:\nName, Date/time")
                 Spacer()
+                    .onAppear {
+                        viewModel.loadAllEvents()
+                    }
             }.navigationTitle("Fords Rewards")
+           
         
     }
 }
